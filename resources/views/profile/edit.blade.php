@@ -1,4 +1,4 @@
-@extends('layouts.app', ['activePage' => 'user', 'title' => 'Light Bootstrap Dashboard Laravel by Creative Tim & UPDIVISION', 'navName' => 'User Profile', 'activeButton' => 'laravel'])
+@extends('layouts.app', ['activePage' => 'user', 'title' => 'Bulk Email', 'navName' => 'User Profile', 'activeButton' => 'laravel'])
 
 @section('content')
     <div class="content">
@@ -6,8 +6,8 @@
             <div class="section-image">
                 <!--   you can change the color of the filter page using: data-color="blue | purple | green | orange | red | rose " -->
                 <div class="row">
-
-                    <div class="card col-md-8">
+                    <!-- <div class="col-md-2"></div> -->
+                    <div class="card col-md-12">
                         <div class="card-header">
                             <div class="row align-items-center">
                                 <div class="col-md-8">
@@ -42,7 +42,7 @@
                                         @include('alerts.feedback', ['field' => 'email'])
                                     </div>
                                     <div class="text-center">
-                                        <button type="submit" class="btn btn-default mt-4">{{ __('Save') }}</button>
+                                        <button type="submit" class="btn btn-primary mt-4">{{ __('Save') }}</button>
                                     </div>
                                 </div>
                             </form>
@@ -81,14 +81,14 @@
                                     </div>
         
                                     <div class="text-center">
-                                        <button type="submit" class="btn btn-default mt-4">{{ __('Change password') }}</button>
+                                        <button type="submit" class="btn btn-primary mt-4">{{ __('Change password') }}</button>
                                     </div>
                                 </div>
                             </form>
                         </div>
                     </div>
 
-                    <div class="col-md-4">
+                    <!-- <div class="col-md-4">
                         <div class="card card-user">
                             <div class="card-image">
                                 <img src="https://ununsplash.imgix.net/photo-1431578500526-4d9613015464?fit=crop&fm=jpg&h=300&q=75&w=400" alt="...">
@@ -122,7 +122,7 @@
                                 </button>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>

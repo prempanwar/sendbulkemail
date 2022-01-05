@@ -50,7 +50,7 @@
                     <img src="{{ asset('light-bootstrap/img/sidebar-5.jpg') }}" alt="" />
                 </a>
             </li>
-            <li class="button-container">
+            <!-- <li class="button-container">
                 <div class="">
                     <a href="https://www.creative-tim.com/product/light-bootstrap-dashboard-laravel" target="_blank" class="btn btn-info btn-block btn-fill">{{ __("Download, it's free!") }}</a>
                 </div>
@@ -70,7 +70,7 @@
             <li class="button-container">
                 <button id="twitter" class="btn btn-social btn-outline btn-twitter btn-round sharrre twitter-sharrre"><i class="fa fa-twitter"></i>{{ __('· 256') }}</button>
                 <button id="facebook" class="btn btn-social btn-outline btn-facebook btn-round sharrre facebook-sharrre"><i class="fa fa-facebook-square"></i>{{ __('· 426') }}</button>
-            </li>
+            </li> -->
         </ul>
     </div>
 </div>

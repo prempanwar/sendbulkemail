@@ -1,10 +1,11 @@
-@extends('layouts.app', ['activePage' => 'dashboard', 'title' => 'Light Bootstrap Dashboard Laravel by Creative Tim & UPDIVISION', 'navName' => 'Dashboard', 'activeButton' => 'laravel'])
+@extends('layouts.app', ['activePage' => 'dashboard', 'title' => 'Bulk Email', 'navName' => 'Dashboard', 'activeButton' => 'laravel'])
 
 @section('content')
     <div class="content">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-md-4">
+            <div class="col-md-12"><div class="card "><div class="card-header "><b>Welcom to the dashboard</b></div></div></div>
+                <!-- <div class="col-md-4">
                     <div class="card ">
                         <div class="card-header ">
                             <h4 class="card-title">{{ __('Email Statistics') }}</h4>
@@ -23,8 +24,8 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-8">
+                </div> -->
+                <!-- <div class="col-md-8">
                     <div class="card ">
                         <div class="card-header ">
                             <h4 class="card-title">{{ __('Users Behavior') }}</h4>
@@ -45,9 +46,9 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
-            <div class="row">
+            <!-- <div class="row">
                 <div class="col-md-6">
                     <div class="card ">
                         <div class="card-header ">
@@ -206,7 +207,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
 @endsection
