@@ -13,9 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
+Route::get('/', [App\Http\Controllers\Auth\LoginController::class, 'showLoginForm']);
+
 
 Auth::routes();
 
@@ -32,6 +32,7 @@ Route::group(['middleware' => 'auth'], function () {
 	Route::resource('product', 'App\Http\Controllers\ProductController');
 	Route::get('product/change_status/{id}', 'App\Http\Controllers\ProductController@change_status');
 	Route::get('product/delete/{id}', 'App\Http\Controllers\ProductController@delete_product');
+	Route::get('email', 'App\Http\Controllers\EmailController@index')->name('email');
 });
 
 Route::group(['middleware' => 'auth'], function () {

@@ -1,9 +1,9 @@
-@extends('layouts/app', ['activePage' => 'login', 'title' => 'Light Bootstrap Dashboard Laravel by Creative Tim & UPDIVISION'])
+@extends('layouts/app', ['activePage' => 'login', 'title' => 'SendBulkEmail'])
 
 @section('content')
     <div class="full-page section-image" data-color="black" data-image="{{ asset('light-bootstrap/img/full-screen-image-2.jpg') }}">
         <div class="content pt-5">
-            <div class="container mt-5">    
+            <div class="container mt-5" style="margin-top: 0px !important;">    
                 <div class="col-md-4 col-sm-6 ml-auto mr-auto">
                     <form class="form" method="POST" action="{{ route('login') }}">
                         @csrf
@@ -53,14 +53,14 @@
                                     <div class="container text-center" >
                                         <button type="submit" class="btn btn-warning btn-wd">{{ __('Login') }}</button>
                                     </div>
-                                    <div class="d-flex justify-content-between">
+                                    <!-- <div class="d-flex justify-content-between">
                                         <a class="btn btn-link"  style="color:#23CCEF" href="{{ route('password.request') }}">
                                         {{ __('Forgot password?') }}
                                         </a>
                                         <a class="btn btn-link" style="color:#23CCEF" href="{{ route('register') }}">
                                             {{ __('Create account') }}
                                         </a>
-                                    </div>
+                                    </div> -->
                                     
                                 </div>
                             </div>

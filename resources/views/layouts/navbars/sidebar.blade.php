@@ -46,10 +46,16 @@ Tip 2: you can also add an image using data-image tag
                 </div>
             </li> -->
 
-            <li class="nav-item @if($activePage == 'table') active @endif">
+            <!-- <li class="nav-item @if($activePage == 'table') active @endif">
                 <a class="nav-link" href="{{route('page.index', 'table')}}">
                     <i class="nc-icon nc-notes"></i>
                     <p>{{ __("Table List") }}</p>
+                </a>
+            </li> -->
+            <li class="nav-item @if($activePage == 'email') active @endif">
+                <a class="nav-link" href="{{route('email', '')}}">
+                    <i class="nc-icon nc-notes"></i>
+                    <p>{{ __("Email List") }}</p>
                 </a>
             </li>
             <!-- <li class="nav-item @if($activePage == 'typography') active @endif">
